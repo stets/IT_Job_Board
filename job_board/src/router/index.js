@@ -7,10 +7,6 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: 'index.html',
-    redirect: '/',
-  },
-  {
     path: '/',
     name: 'jobs',
     component: () => import('../views/Jobs.vue'),

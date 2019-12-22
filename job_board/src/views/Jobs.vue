@@ -10,7 +10,7 @@
       </div>
     </section>
     <div class='columns'>
-      <div class='column is-four-fifths is-offset-1'>
+      <div class='column is-four-fifths is-offset-1'><br>
         <p>
           Hiring help desk, sys-admins, hackers, network engineers or any kind of IT staff?
           Reach our network of IT professionals today 👉
@@ -35,7 +35,7 @@
 
           <b>Posted</b>
           {{job.gsx$timestamp.$t}}
-          <a href="{{job.gsx$url.$t}}">
+          <a :href=job.gsx$url.$t>
             <button class='button is-danger is-pulled-right apply-button'>Apply</button>
           </a>
           <details>
@@ -59,7 +59,7 @@
             <b>Description:</b>
             {{job.gsx$descriptionornotes.$t}}
             <br />
-            <a href="{{job.gsx$url.$t}}">
+            <a :href=job.gsx$url.$t>
               <button class='button is-danger'>Apply</button>
             </a>
           </details>

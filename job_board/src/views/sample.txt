@@ -1,0 +1,11 @@
+gsx$timestamp.$t
+gsx$postedby.$t
+gsx$company.$t
+gsx$role.$t
+gsx$location.$t
+gsx$remote.$t
+gsx$remoterestrictions.$t
+gsx$salaryrange.$t
+gsx$visasponsorship.$t
+gsx$url.$t'gsx$contact.$t
+gsx$descriptionornotes.$t

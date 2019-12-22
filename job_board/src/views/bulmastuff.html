@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/jobboard.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>This is an IT Support Group Job Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        axios({
+            method: 'get',
+            url: 'https://spreadsheets.google.com/feeds/list/1zBeYVkoyLavJIIBKJ9aG8ID_ZtLe-UHeKK72hk_ZKfE/1/public/values?alt=json',
+        })
+            .then((response) => {
+                console.log(response);
+            }, (error) => {
+                console.log(error);
+            });
+
+    </script>
+
+
+    <section class="hero is-medium is-bold is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    This is an IT Support Group
+                </h1>
+                <h2 class="subtitle">
+                    Official Job Board
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-medium has-bg-img">
+
+        <container>
+
+
+            <div class="columns">
+
+                <div class="column"></div>
+                <div class="column is-four-fifths">
+                    <br>
+                    <container>
+                        Hiring SysAdmins, HelpDesk, DevOps? Post a job to our IT jobs hiring board! 👉 <button
+                            class="button is-danger accordion">Post a Job</button>
+
+
+                        <details>
+                            <summary>
+                                How to beat the boss...spoiler alert !
+                            </summary>
+                            <p> Just aim to the red spots near his eyes</p>
+                            <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your
+                                laser beam.</p>
+                        </details>
+                    </container>
+
+
+                    {% for each in jobs %} <br><br>
+                    <div class="job-row">
+                        <h3 class="title">
+                            <p>{{ each.role }}</p>
+                        </h3>
+                        <h3 class="subtitle">
+                            <p>{{ each.company }}
+                        </h3>
+                        <b>Post-Date</b> {{ each.timestamp.strftime('%B-%d-%Y') }} <a href="{{ each.url }}"><button
+                                class="button is-danger is-pulled-right	">Apply</button></a>
+                        </details>
+                        <details>
+                            <summary>More Details</summary>
+                            <br><b>posted by: </b>{{each.postedby}}
+                            <br><b>location: </b>{{each.location}}
+                            <br><b>remote: </b>{{ each.remote }}
+                            <br><b>salary range: </b>{{ each.salaryrange }}
+                            <br><b>visa: </b>{{ each.visasponsorship }}
+
+                            <br><b>contact: </b>{{ each.contact }}
+                            <br><b>Description: </b>{{ each.descriptionornotes }}
+                            <br><b>apply at: </b><a href="{{ each.url }}"><button
+                                    class="button is-danger">Apply</button></a>
+                        </details>
+                        <hr>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+                <div class="column"></div>
+
+            </div>
+
+
+
+</body>
+
+</html>

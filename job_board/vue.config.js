@@ -5,4 +5,5 @@ module.exports = {
     host: process.env.HOST,
     disableHostCheck: true,
   },
+  publicPath:' '
 };

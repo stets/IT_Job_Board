@@ -35,7 +35,7 @@
 
           <b>Posted</b>
           {{job.gsx$timestamp.$t}}
-          <a href>
+          <a href="{{job.gsx$url.$t}}">
             <button class='button is-danger is-pulled-right apply-button'>Apply</button>
           </a>
           <details>
@@ -59,7 +59,7 @@
             <b>Description:</b>
             {{job.gsx$descriptionornotes.$t}}
             <br />
-            <a href>
+            <a href="{{job.gsx$url.$t}}">
               <button class='button is-danger'>Apply</button>
             </a>
           </details>

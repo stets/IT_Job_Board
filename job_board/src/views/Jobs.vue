@@ -98,7 +98,7 @@ export default {
     },
   },
   mounted() {
-    this.get_jobs();
+    // this.get_jobs();
   },
 };
 </script>

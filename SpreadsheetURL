@@ -1,0 +1,6 @@
+https://spreadsheets.google.com/feeds/list/1zBeYVkoyLavJIIBKJ9aG8ID_ZtLe-UHeKK72hk_ZKfE/1/public/values?alt=json
+
+
+https://stackoverflow.com/questions/30082277/accessing-a-new-style-public-google-sheet-as-json
+
+Note: replace od6 by the sheet: default or 1 (first), 2 (second), etc.

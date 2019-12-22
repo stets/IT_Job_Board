@@ -1,0 +1,10 @@
+.has-bg-img {
+     background: url('./header.jpg')center center; 
+     background-size:cover; 
+}
+
+
+
+.job-row:hover {
+     opacity: 0.1;
+}

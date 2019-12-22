@@ -14,12 +14,11 @@ const routes = [
   {
     path: '*',
     name: 'catchAll',
-    component: Home
+    component: () => import('../views/Jobs.vue'),
  }
 ];
 
 const router = new VueRouter({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes,
 });

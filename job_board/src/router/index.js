@@ -11,6 +11,11 @@ const routes = [
     name: 'jobs',
     component: () => import('../views/Jobs.vue'),
   },
+  {
+    path: '*',
+    name: 'catchAll',
+    component: Home
+ }
 ];
 
 const router = new VueRouter({

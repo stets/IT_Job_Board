@@ -2,7 +2,7 @@
 module.exports = {
   // options...
   devServer: {
-    host: '0.0.0.0',
+    host: process.env.HOST,
     disableHostCheck: true,
   },
 };

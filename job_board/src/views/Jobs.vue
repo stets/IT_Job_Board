@@ -24,7 +24,7 @@
       <div class='column is-four-fifths is-offset-1'>
         <br />
 
-        <div class='job-row' v-for='job in job_list.reverse()' v-bind:key='job'>
+        <div class='job-row' v-for='job in job_list' v-bind:key='job'>
           <h4>{{job.gsx$company.$t}}</h4>
           <h1 class='title is-4 role-title'>
             <b>{{job.gsx$role.$t}}</b>

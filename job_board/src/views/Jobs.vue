@@ -10,20 +10,11 @@
       </div>
     </section>
     <div class='columns'>
-      <div class='column is-four-fifths is-offset-1'><br>
-        <p>
-          Hiring help desk, sys-admins, hackers, network engineers or any kind of IT staff?
-          Reach our network of IT professionals today 👉
-        </p>
-        <a href='http://bit.ly/ITSupporthiring'>
-          <u>Post a job directly via Google Forms</u>
-        </a>
-      </div>
     </div>
     <div class='columns'>
-      <div class='column is-four-fifths is-offset-1'>
-        <br />
-
+      <div class='column is-half is-gapless is-offset-1 section'>
+        <br/>
+        <h1 class='title'>Recent Jobs</h1>
         <div class='job-row' v-for='job in job_list.slice().reverse()' v-bind:key='job'>
           <h4>{{job.gsx$company.$t}}</h4>
           <h1 class='title is-4 role-title'>
@@ -63,10 +54,27 @@
               <button class='button is-danger'>Apply</button>
             </a>
           </details>
-          <hr />
         </div>
       </div>
-      <div class='column'></div>
+
+        <div class='column is-gapless is-two-fifths section'><h1 class="subtitle">Why This is an IT Support Group?</h1> <p>
+        <a href="https://thisisanitsupportgroup.com">This is an IT Support Group</a> is a rapidly-growing community for helpdesk technicians, sys-admins, hackers, network engineers or any kind of IT staff to connect with each other and advance their careers.
+        <br>
+        <br>
+          Reach our network of >15,000 IT professionals today and find your next perfect hire 👇
+        </p>
+        <br>
+          <a href='http://bit.ly/ITSupporthiring'>
+          <button class="button is-danger">Post a job</button>
+          </a>
+          <div class="container"><br><br>
+          <h1 class="subtitle">Partner</h1>
+          If you're looking to reach a diverse crowd of IT professionals nationally, <a href="hello@heliositservices.com">contact us</a> for partnership information.</div>
+          <div class="container"><br><br>
+          <h1 class="subtitle">Open-Source</h1>
+          Contribute to open-source and want to help improve this page?
+          This page's VueJS source code is public on <a href="https://github.com/stets/IT_Job_Board">Github</a> and accepting pull requests.  </div>
+        </div>
     </div>
   </div>
 </template>

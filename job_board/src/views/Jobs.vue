@@ -5,7 +5,7 @@
       <div class='hero-body'>
         <div class='container'>
           <h1 class='title'>This is an IT Support Group</h1>
-          <h2 class='subtitle'>Official Job Board</h2>
+          <h2 class='subtitle'>A no-bs Job-Board for IT professionals.</h2>
         </div>
       </div>
     </section>
